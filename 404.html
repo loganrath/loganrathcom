@@ -1,8 +1,13 @@
----
-redirect-to: https://www.loganrath.info
----
 <html lang="en">
 <head></head>
 <body>
-<p style="text-align: center; font-size: 24px;">This page has moved to https://www.loganrath.info</p>.</body>
+  <p style="margin-top: 7em; text-align: center; font-size: 24px;">This site has changed addresses to <a href="https://www.loganrath.info">https://www.loganrath.info.</a>.</p>
+  <p>You can try this web address: <a id="link" href="">https://www.loganrath.info<span id="pathname"></span></a></p>.
+</body>
 </html>
+<script>
+  var pathname = window.location.pathname;
+  document.getElementById("pathname").innerHTML = pathname;
+  var newURL = "https://www.loganrath.info/" + pathname;
+  document.getElementById("link").href = newURL;
+</script>
